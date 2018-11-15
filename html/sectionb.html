@@ -1,0 +1,38 @@
+</!DOCTYPE html>
+<html>
+	<head>
+		<title>Section B</title>
+
+		<script src="../js/sectionb.js"> </script>
+
+	</head>
+
+	<body>
+
+			<form target="_blank" action="successfully_submitted.html" method="post" id="sbform" name="sbform" class="validate">
+
+				<input type="submit" value="Submit" name="Submit" id="submit" class="submit"><br/>
+
+					<label> First Name: <input type="text" id="firstname" name="firstname" placeholder="Enter Name" required>
+					</label><br/>
+
+					<label> Surname: <input type="text" id="surname" name="surname" placeholder="Enter Surname" required>
+					</label><br/>
+
+					<label> Email: <input type="text" id="email" name="email" placeholder="Enter Email" required>
+					</label><br/>
+
+					<label>ID</label>
+					<input type="radio" name="id" value="yes" id="yesCheck" onclick="showCheck();"><label for="yesCheck">Yes</label>
+					<input type="radio" name="id" value="no" id="noCheck" onclick="showCheck();"><label for="noCheck">No</label>
+					<br/>
+
+					<div id="ifYes" style="visibility:hidden">
+					<input type="file" name="fileupload" id="fileupload">
+					</div>
+
+			</form>
+
+	</body>
+
+</html>
